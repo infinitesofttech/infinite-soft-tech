@@ -1,6 +1,14 @@
 (function ($) {
   "use strict";
 
+
+    // Disable preloader
+  $(document).ready(function() {
+    if ($(".preloader").length) {
+      $(".preloader").hide();
+    }
+  });
+
   /*-- Checkout Accoradin --*/
   if ($(".checkout-page__payment__title").length) {
     $(".checkout-page__payment__item")
